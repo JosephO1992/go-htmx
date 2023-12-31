@@ -1,0 +1,12 @@
+package user
+
+import "go-htmx-fiber/views/layouts"
+import "go-htmx-fiber/model"
+
+// import "go-htmx-fiber/model"
+
+templ Show(user model.User) {
+	@layouts.Base() {
+		<h1>Hello from the User Page { user.Email } </h1>
+	}
+}
